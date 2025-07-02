@@ -1,0 +1,24 @@
+/* --- general styling --- */
+body, button{
+    font-family: karla;
+}
+
+h1, h2, h3, nav{
+    font-family: lato;
+}
+
+body{
+    background-color: #f3f0e9;
+}
+
+.wrapper{
+    width: 1200px;
+}
+
+.yellow-text{
+    color: #d69e3d;
+}
+
+h1, .banner-container p, .header-button{
+    color: #ffffff;
+}
