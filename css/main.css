@@ -1,24 +1,133 @@
-/* --- general styling --- */
-body, button{
-    font-family: karla;
+/* --- mobile styling --- */
+@media screen and (min-width: 390px) {
+
+    /* general styling */
+    body, button{
+        font-family: karla;
+    }
+
+    h1, h2, h3, nav{
+        font-family: lato;
+    }
+
+    p{
+        font-size: 1rem;
+        font-size: 1.25rem;
+        line-height: 1.66rem;
+        margin: 1rem 0;
+        font-weight: lighter;
+    }
+
+    body{
+        background-color: #f3f0e9;
+    }
+
+    .wrapper{
+        width: 1200px;
+        margin: auto;
+    }
+
+    .yellow-text{
+        color: #d69e3d;
+    }
+
+    h1, .banner-container p, footer, nav{
+        color: #ffffff;
+    }
+
+    button{
+        border-color: #ffffff;
+    }
+
+    .banner-container, .sec2, .sec3, footer{
+        text-align: center;
+    }
+
+    /* header */
+    .banner-container{
+    height: 57.5vh;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, .5)), url(../images/hero-background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 1.5rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 8rem;
+    }
+
+    .logo{
+        margin-bottom: .5rem;
+    }
+
+    nav{
+        margin-left: auto;
+        display: none;
+    }
+
+    .nav-button{
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+    }
+
+    .fa-bars{
+        font-size: 1.5rem;
+    }
+
+    .nav-bar{
+        display: flex;
+        border-bottom: 1px solid #ffffff75;
+    }
+
+    nav li{
+        display: inline;
+    }
+
+    .header-button{
+        font-size: 1.5rem;
+        padding: .5rem 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .header-button:hover{
+        color: #ffffff;
+        background-color: #966f2c;
+    }
+
+
+    /* main */
+    .sec5{
+        background-color: black;
+    }
+
+    footer{
+        border-top: 1px solid #ffffff;
+        padding: 1rem;
+        background-color: black;
+    }
 }
 
-h1, h2, h3, nav{
-    font-family: lato;
+
+/* --- tablet styling --- */
+@media screen and (min-width: 768px){
+    .nav-button{
+        display: none;
+    }
+    nav{
+        display: inline;
+    }
 }
 
-body{
-    background-color: #f3f0e9;
-}
 
-.wrapper{
-    width: 1200px;
-}
+/* --- desktop styling --- */
+@media screen and (min-width: 1440px){
 
-.yellow-text{
-    color: #d69e3d;
-}
-
-h1, .banner-container p, .header-button{
-    color: #ffffff;
 }
