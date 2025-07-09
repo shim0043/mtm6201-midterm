@@ -6,6 +6,12 @@
         font-family: karla;
     }
 
+    .skip-link{
+        position: fixed;
+        z-index: -1;
+        color: #f3f0e9;
+    }
+
     body{
         background-color: #f3f0e9;
     }
@@ -68,13 +74,26 @@
 
 
     /* header styling */
+    @keyframes pop-up {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .banner-overlay{
+        animation: pop-up 1s 0s alternate forwards ease-out;
+    }
+
     .banner-container{
-    height: 60vh;
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/hero-background.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 1rem;
+        height: 60vh;
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/hero-background.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 1rem;
     }
 
     h1{
@@ -88,7 +107,7 @@
     .banner-container p{
         font-size: 1rem;
         font-size: 1.25rem;
-        margin: 1rem .25rem;
+        margin: 1rem 0;
         font-weight: lighter;
         padding-bottom: 0;
     }
@@ -364,7 +383,7 @@
 
     h1{
         font-size: 3.875rem;
-        padding: 0 25rem;
+        padding: 0 15rem;
         line-height: 4.5rem;
     }
 
@@ -397,13 +416,18 @@
         margin-inline-start: 2.5rem;
     }
 
+    a:link{
+    text-decoration: none;
+    color: #ffffff;
+    }
+
     .nav-bar{
         max-width: 1200px;
         margin: auto;
     }
 
     .banner-container p{
-        padding: 0 28rem;
+        padding: 0 20rem;
     }
 
     .banner-container{
