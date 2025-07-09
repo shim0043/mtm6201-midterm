@@ -6,6 +6,10 @@
         font-family: karla;
     }
 
+    body{
+        background-color: #f3f0e9;
+    }
+
     h1, h2, h3, nav{
         font-family: lato;
     }
@@ -16,6 +20,12 @@
         padding-bottom: 1rem;
     }
 
+    :root{
+        --button-color: #ffffff;
+        --yellow-button: #966f2c;
+        --black-button: #000000;
+    }
+
     .yellow-text{        
         color: #d69e3d;
         font-size: 1.25rem;
@@ -23,24 +33,12 @@
         font-weight: bold;
     }
 
-    .banner-container p{
-        font-size: 1rem;
-        font-size: 1.25rem;
-        margin: 1rem .25rem;
-        font-weight: lighter;
-        padding-bottom: 0;
-    }
-
-    body{
-        background-color: #f3f0e9;
-    }
-
     h1, .banner-container p, footer, nav{
         color: #ffffff;
     }
 
     button{
-        border-color: #ffffff;
+        border-color: var(--button-color);
         font-size: 1.5rem;
         padding: 1rem 2rem;
         text-transform: uppercase;
@@ -49,13 +47,18 @@
     }
 
     button:hover{
-        color: #ffffff;
-        background-color: #966f2c;
+        color: var(--button-color);
+        background-color: var(--yellow-button);
     }
 
     .banner-container, .sec3, footer{
         text-align: center;
     }
+
+    .container{
+        background-color: #000000;
+    }
+
 
     /* header styling */
     .banner-container{
@@ -75,6 +78,14 @@
         padding: 0 2rem;
     }
 
+    .banner-container p{
+        font-size: 1rem;
+        font-size: 1.25rem;
+        margin: 1rem .25rem;
+        font-weight: lighter;
+        padding-bottom: 0;
+    }
+
     nav{
         margin-left: auto;
         display: none;
@@ -84,7 +95,7 @@
         margin-left: auto;
         background-color: transparent;
         border: none;
-        color: #ffffff;
+        color: var(--button-color);
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -98,16 +109,12 @@
         border-bottom: 1px solid #ffffff75;
     }
 
-    nav li{
-        display: inline;
-    }
-
     .header-button{
         font-size: 1.5rem;
         padding: .5rem 2rem;
         text-transform: uppercase;
         font-weight: bold;
-        color: #000000;
+        color: var(--black-button);
     }
 
 
@@ -166,7 +173,7 @@
         padding-top: 1rem;
     }
 
-    .sec3{
+    .sec3-container{
         height: 55vh;
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/coffee-shop.jpeg);
         background-size: cover;
@@ -175,17 +182,17 @@
     }
 
     .locations button{
-        color: #ffffff;
+        color: var(--button-color);
         background-color: transparent;
     }
 
     .locations button:hover{
-        color: #000000;
-        background-color: #ffffff;
+        color: var(--black-button);
+        background-color: var(--button-color);
     }
 
     .sec3 div{
-        margin: 2.5rem;
+        margin: 2.5rem 0;
     }
 
     .sec3 h2{
@@ -204,16 +211,15 @@
     }
 
     .sec4 button{
-        color: #ffffff;
-        background-color: #000000;
+        color: var(--button-color);
+        background-color: var(--black-button);
     }
 
     .sec4 button:hover{
-        background-color: #966f2c;
+        background-color: var(--yellow-button);
     }
 
     .sec5{
-        background-color: black;
         padding: 1.5rem;
         padding-top: 4rem;
         margin-top: 4rem;
@@ -233,25 +239,22 @@
     }
 
     .jane{
-        height: 66vh;
         background-image: 
         linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/testimonial-1.jpeg);
-        background-size: cover;
-        background-position: center;
     }
 
     .scott{
-        height: 66vh;
         background-image: 
         linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/testimonial-2.jpeg);
-        background-size: cover;
-        background-position: center;
     }
 
     .susie{
-        height: 66vh;
         background-image: 
         linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/testimonial-3.jpeg);
+    }
+
+    .jane, .scott, .susie{
+        height: 66vh;
         background-size: cover;
         background-position: center;
     }
@@ -259,7 +262,7 @@
     
     /* footer styling */
     footer{
-        border-top: 1px solid #ffffff;
+        border-top: 1px solid #ffffff75;
         padding: 1rem;
         background-color: black;
     }
@@ -326,12 +329,16 @@
     .sec3{
         height: 60vh;
     }
+
+    .sec5{
+        padding-bottom: 2.5rem;
+    }
 }
 
 
 /* --- desktop styling --- */
 @media screen and (min-width: 1440px){
-    
+
     /* general styling */
     .wrapper{
         width: 1200px;
@@ -352,13 +359,30 @@
         font-size: 2rem;
     }
 
+    .sec5{
+        width: 1200px;
+        margin: auto;
+    }
+
     /* header styling */
     .nav-button{
         display: none;
     }
     
     nav{
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    nav li{
         display: inline;
+        margin-inline-start: 2.5rem;
+    }
+
+    .nav-bar{
+        max-width: 1200px;
+        margin: auto;
     }
 
     .banner-container p{
@@ -367,5 +391,48 @@
 
     .banner-container{
         height: 80vh;
+    }
+
+    /* main styling */
+    .sec1, .sec2{
+        margin: 5rem 0;
+    }
+
+    .sec2-card, .sec5-card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sec3{
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        /* padding: 0 calc((100% - 1200px)/2); */
+    }
+
+    .sec4{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        margin: 0;
+        margin-top: 2rem;
+        margin: 5rem 0;
+    }
+
+    .sec4 div:nth-child(2){
+        width: 100%;
+    }
+
+    .sec5{
+        padding-bottom: 5rem;
+        background-color: #000000;
+    }
+
+    .sec5-card p{
+        transform: translate(0, 475px);
     }
 }
