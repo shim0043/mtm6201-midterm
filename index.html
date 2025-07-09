@@ -14,31 +14,32 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/21478e2192.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
+<body itemscope="" itemtype="https://schema.org/CafeOrCoffeeShop">
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <header role="banner">
         <div class="banner-container">
             <div class="nav-bar">
-                <img class="logo" src="images/my-coffee-shop-logo.svg" alt="Logo containing texts: 'My Coffee House', with 2 coffee beans">
-                <nav>
+                <img class="logo" src="images/my-coffee-shop-logo.svg" alt="Logo containing texts: 'My Coffee House', with 2 coffee beans" itemprop="logo">
+                <nav role="navigation">
                     <ul>
-                        <li>About Us</li>
-                        <li>Menu</li>
-                        <li>Locations</li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#locations">Locations</a></li>
                     </ul>
                 </nav>
-                <button class="nav-button"><i class="fa-solid fa-bars"></i></button>
+                <button class="nav-button" aria-label="Open navigation menu"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <h1>Experience coffee like never before</h1>
-            <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
+            <h1 itemprop="name">Experience coffee like never before</h1>
+            <p itemprop="description">We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
             <button class="header-button">Explore our menu</button>
         </div>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <div class="wrapper">
-            <section class="sec1">
+            <section class="sec1" aria-labelledby="welcome-heading">
                 <p class="yellow-text">Welcome to My Coffee House</p>
-                <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
+                <h2 id="welcome-heading">EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
 
                 <div class="coffee-grid">
                     <div class="big-coffee sec1-coffee">
@@ -54,41 +55,41 @@
                 </div>
             </section>
         
-            <section class="sec2">
+            <section class="sec2" aria-labelledby="offer-heading">
                 <p class="yellow-text">What we Offer</p>
-                <h2>Why visit us?</h2>
+                <h2 id="offer-heading">Why visit us?</h2>
 
                 <div class="sec2-card">
-                    <div class="card1">
+                    <div class="card1" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
                         <img src="images/fair-trade.svg" alt="SVG of two hands initiating trade">
-                        <h3>Fair Trade Coffee</h3>
-                        <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+                        <h3 itemprop="name">Fair Trade Coffee</h3>
+                        <p itemprop="description">We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
                     </div>
 
-                    <div class="card2">
+                    <div class="card2" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
                         <img src="images/local-baked-goods.svg" alt="SVG of pastries in a basket">
-                        <h3>Local baked goods</h3>
-                        <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+                        <h3 itemprop="name">Local baked goods</h3>
+                        <p itemprop="description">We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
                     </div>
 
-                    <div class="card3">
+                    <div class="card3" itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
                         <img src="images/made-with-love.svg" alt="SVG of coffee cup with a heart design">
-                        <h3>Made with love</h3>
-                        <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
+                        <h3 itemprop="name">Made with love</h3>
+                        <p itemprop="description">We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
                     </div>
                 </div>
             </section>
         </div>
 
         <div class="sec3-container">
-            <section class="sec3">
-                <div class="our-menu">
+            <section class="sec3" aria-labelledby="menu-locations-heading">
+                <div id="menu" class="our-menu">
                     <p class="yellow-text">Our Menu</p>
-                    <h2>Explore what we have to offer you</h2>
+                    <h2 id="menu-locations-heading">Explore what we have to offer you</h2>
                     <button>Explore our menu</button>
                 </div>
 
-                <div class="locations">
+                <div id="locations" class="locations">
                     <p class="yellow-text">Locations</p>
                     <h2>Find your nearest coffee shop</h2>
                     <button>View Locations</button>
@@ -97,14 +98,14 @@
         </div>
 
         <div class="wrapper">
-            <section class="sec4">
+            <section id="about-us" class="sec4" role="article" aria-labelledby="about-us-heading">
                 <div>
                     <img src="images/about-us.jpeg" alt="Kid using coffee machine holding a glass cup">
                 </div>
 
                 <div>
                     <p class="yellow-text">About Us</p>
-                    <h2>Read our story</h2>
+                    <h2 id="about-us-heading">Read our story</h2>
                     <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
                     <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
                     <button>Learn more</button>
@@ -113,31 +114,31 @@
         </div>
 
         <div class="container">
-            <section class="sec5">
+            <section class="sec5" role="region" aria-labelledby="testimonials-heading">
                 <p class="yellow-text">Testimonials</p>
-                <h2>What our customers say about us</h2>
+                <h2 id="testimonials-heading">What our customers say about us</h2>
 
                 <div class="sec5-card">
-                    <div class="card1 jane">
-                        <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
-                        <p class="yellow-text">Jane D., Toronto</p>
+                    <div class="card1 jane" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                        <p itemprop="reviewBody">"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
+                        <p class="yellow-text" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Jane D.</span>, Toronto</p>
                     </div>
 
-                    <div class="card2 scott">
-                        <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
-                        <p class="yellow-text">Scott S., Ottawa</p>
+                    <div class="card2 scott" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                        <p itemprop="reviewBody">"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
+                        <p class="yellow-text" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Scott S.</span>, Ottawa</p>
                     </div>
 
-                    <div class="card3 susie">
-                        <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
-                        <p class="yellow-text">Susie F., Ottawa</p>
+                    <div class="card3 susie" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                        <p itemprop="reviewBody">"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
+                        <p class="yellow-text" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Susie F.</span>, Ottawa</p>
                     </div>
                 </div>
             </section>
         </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <p>© My Coffee Company 2025</p>
     </footer>
 </body>
