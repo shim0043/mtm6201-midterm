@@ -83,7 +83,7 @@ button:focus{
 }
 
 .banner-overlay{
-    animation: pop-up 1.5s .5s alternate forwards ease-out;
+    animation: pop-up 2s 0s alternate forwards ease-out;
 }
 
 .banner-container{
